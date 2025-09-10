@@ -55,51 +55,34 @@
         </developer>
     </developers>
 
-    <distributionManagement>
-        <snapshotRepository>
-            <id>central</id> <!-- CAMBIADO -->
-            <url>https://central.sonatype.com/api/v1/publisher/snapshot</url>
-        </snapshotRepository>
+     <distributionManagement>
         <repository>
-            <id>central</id> <!-- CAMBIADO -->
+            <id>central</id>
             <url>https://central.sonatype.com/api/v1/publisher/release</url>
         </repository>
+        <snapshotRepository>
+            <id>central</id>
+            <url>https://central.sonatype.com/api/v1/publisher/snapshot</url>
+        </snapshotRepository>
     </distributionManagement>
 
-    <!-- BUILD PLUGINS (OBLIGATORIOS) -->
+
     <build>
         <plugins>
-            <!-- Plugin para generar fuentes -->
+            <!-- PLUGIN CENTRAL PUBLISHING (OBLIGATORIO) -->
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-                <version>3.2.1</version>
-                <executions>
-                    <execution>
-                        <id>attach-sources</id>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
+                <groupId>org.sonatype.central</groupId>
+                <artifactId>central-publishing-maven-plugin</artifactId>
+                <version>0.8.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <publishingServerId>central</publishingServerId>
+                    <autoPublish>true</autoPublish>
+                    <waitUntil>published</waitUntil>
+                </configuration>
             </plugin>
 
-            <!-- Plugin para Javadoc -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.5.0</version>
-                <executions>
-                    <execution>
-                        <id>attach-javadocs</id>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
-            <!-- Plugin para GPG (firma digital) -->
+            <!-- PLUGIN PARA GPG (FIRMA) -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
@@ -115,15 +98,36 @@
                 </executions>
             </plugin>
 
-            <!-- Plugin para deployment a Sonatype -->
+            <!-- PLUGIN PARA SOURCES -->
             <plugin>
-                <groupId>org.sonatype.central</groupId>
-                <artifactId>central-publishing-maven-plugin</artifactId>
-                <version>1.0.0</version>
-                <configuration>
-                    <serverId>central</serverId>
-                    <publishingType>MAVEN</publishingType>
-                </configuration>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+            <!-- PLUGIN PARA JAVADOC -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.5.0</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

@@ -2,7 +2,7 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>speeder.jpa</groupId>
+    <groupId>io.github.tyrone1987</groupId>
     <artifactId>speeder-jpa-nbm</artifactId>
     <version>1.0.0</version>
     <packaging>nbm</packaging>
@@ -115,7 +115,7 @@
                 <extensions>true</extensions>
                 <configuration>
                     <publicPackages>
-                        <publicPackage>speeder.jpa.data.model</publicPackage>
+                        <publicPackage>io.github.tyrone1987.data.model</publicPackage>
                     </publicPackages>
                 </configuration>
             </plugin>

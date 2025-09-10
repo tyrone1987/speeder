@@ -1,10 +1,10 @@
 
-package speeder.jpa.provider.integration;
+package io.github.tyrone1987.provider.integration;
 
 import java.util.HashMap;
 import java.util.Map;
-import speeder.jpa.data.model.EntityInterface;
-import speeder.jpa.generator.spi.*;
+import io.github.tyrone1987.data.model.EntityInterface;
+import io.github.tyrone1987.generator.spi.*;
 
 public class EntityBuilderInterfaceProvider implements SrcCodeGenInterface
 {

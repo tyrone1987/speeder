@@ -1,1 +1,1 @@
-speeder.jpa.provider.script.sqlserver.SQLServerScriptProvider
+io.github.tyrone1987.provider.script.sqlserver.SQLServerScriptProvider

@@ -1,5 +1,5 @@
 
-package speeder.jpa.provider.persistence;
+package io.github.tyrone1987.provider.persistence;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -7,8 +7,8 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.ServiceLoader;
-import speeder.jpa.data.model.Entity;
-import speeder.jpa.generator.spi.*;
+import io.github.tyrone1987.data.model.Entity;
+import io.github.tyrone1987.generator.spi.*;
 
 public class EntityFilterProvider implements SrcCodeGenEntity
 {

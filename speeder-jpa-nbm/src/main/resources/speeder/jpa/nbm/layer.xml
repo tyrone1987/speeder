@@ -64,7 +64,7 @@
                 </folder>
                 <folder name="Factories">
                     <file name="SpeederJpaDataModelDataLoader.instance">
-                        <attr name="dataObjectClass" stringvalue="speeder.jpa.nbm.SpeederJpaDataModelDataObject"/>
+                        <attr name="dataObjectClass" stringvalue="io.github.tyrone1987.nbm.SpeederJpaDataModelDataObject"/>
                         <attr name="iconBase" stringvalue="speeder/jpa/nbm/speeder16.png"/>
                         <attr name="instanceCreate" methodvalue="org.openide.loaders.DataLoaderPool.factory"/>
                         <attr name="mimeType" stringvalue="text/speeder-jpa-data-model+xml"/>
@@ -76,7 +76,7 @@
     <folder name="Services">
         <folder name="MIMEResolver">
             <file name="SpeederJpaDataModelResolver.xml" url="SpeederJpaDataModelResolver.xml">
-                <attr name="displayName" bundlevalue="speeder.jpa.nbm.Bundle#Services/MIMEResolver/SpeederJpaDataModelResolver.xml"/>
+                <attr name="displayName" bundlevalue="io.github.tyrone1987.nbm.Bundle#Services/MIMEResolver/SpeederJpaDataModelResolver.xml"/>
             </file>
         </folder>
     </folder>

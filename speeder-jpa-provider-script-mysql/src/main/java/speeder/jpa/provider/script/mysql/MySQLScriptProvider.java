@@ -1,9 +1,9 @@
 
-package speeder.jpa.provider.script.mysql;
+package io.github.tyrone1987.provider.script.mysql;
 
 import java.util.HashMap;
 import java.util.Map;
-import speeder.jpa.generator.spi.*;
+import io.github.tyrone1987.generator.spi.*;
 
 public class MySQLScriptProvider implements SrcCodeGenDataModel
 {

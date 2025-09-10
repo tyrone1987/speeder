@@ -1,12 +1,12 @@
 
-package speeder.jpa.nbm.actions;
+package io.github.tyrone1987.nbm.actions;
 
 import java.awt.event.ActionEvent;
 import java.util.LinkedList;
 import javax.swing.AbstractAction;
-import speeder.jpa.data.model.EntityInterface;
-import speeder.jpa.data.model.ImportPackage;
-import speeder.jpa.nbm.DataModelWraper;
+import io.github.tyrone1987.data.model.EntityInterface;
+import io.github.tyrone1987.data.model.ImportPackage;
+import io.github.tyrone1987.nbm.DataModelWraper;
 
 public class AddInterfaceAction extends AbstractAction
 {

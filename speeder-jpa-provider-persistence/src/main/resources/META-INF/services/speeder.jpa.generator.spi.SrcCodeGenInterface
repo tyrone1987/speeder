@@ -1,2 +1,2 @@
-speeder.jpa.provider.persistence.EntityFilterInterfaceProvider
-speeder.jpa.provider.persistence.EntityInterfaceProvider
+io.github.tyrone1987.provider.persistence.EntityFilterInterfaceProvider
+io.github.tyrone1987.provider.persistence.EntityInterfaceProvider

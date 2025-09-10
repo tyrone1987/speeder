@@ -1,1 +1,1 @@
-speeder.jpa.provider.script.derby.DerbyScriptProvider
+io.github.tyrone1987.provider.script.derby.DerbyScriptProvider

@@ -1,4 +1,4 @@
-package speeder.jpa.integration;
+package io.github.tyrone1987.integration;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.criteria.CriteriaQuery;
@@ -9,7 +9,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.WordUtils;
-import speeder.jpa.persistence.IEntity;
+import io.github.tyrone1987.persistence.IEntity;
 
 /**
  * Esta clase permite realizar consultas sobre las entidades T de

@@ -3,7 +3,7 @@
  * and open the template in the editor.
  */
 
-package speeder.jpa.persistence;
+package io.github.tyrone1987.persistence;
 
 /**
  *

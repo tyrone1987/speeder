@@ -1,5 +1,5 @@
 
-package speeder.jpa.nbm;
+package io.github.tyrone1987.nbm;
 
 public interface DataModelChangeListener
 {

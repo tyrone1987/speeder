@@ -1,5 +1,5 @@
 
-package speeder.jpa.nbm;
+package io.github.tyrone1987.nbm;
 
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBException;
@@ -19,8 +19,8 @@ import org.openide.util.Exceptions;
 import org.openide.util.Lookup;
 import org.openide.util.NbBundle.Messages;
 import org.openide.windows.TopComponent;
-import speeder.jpa.data.model.DataModel;
-import speeder.jpa.nbm.nodes.DataModelNode;
+import io.github.tyrone1987.data.model.DataModel;
+import io.github.tyrone1987.nbm.nodes.DataModelNode;
 
 @MultiViewElement.Registration(displayName = "#LBL_SpeederJpaDataModel_VISUAL",
 iconBase = "speeder/jpa/nbm/speeder16.png",
@@ -79,7 +79,7 @@ public final class SpeederJpaDataModelVisualElement extends JPanel implements Mu
     private void initComponents() {
 
         spMain = new javax.swing.JSplitPane();
-        tvModel = new speeder.jpa.nbm.SpeederJpaDataModelTree();
+        tvModel = new io.github.tyrone1987.nbm.SpeederJpaDataModelTree();
         pnNodeDetails = new javax.swing.JPanel();
 
         setLayout(new java.awt.BorderLayout());
@@ -95,7 +95,7 @@ public final class SpeederJpaDataModelVisualElement extends JPanel implements Mu
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel pnNodeDetails;
     private javax.swing.JSplitPane spMain;
-    private speeder.jpa.nbm.SpeederJpaDataModelTree tvModel;
+    private io.github.tyrone1987.nbm.SpeederJpaDataModelTree tvModel;
     // End of variables declaration//GEN-END:variables
 
     @Override

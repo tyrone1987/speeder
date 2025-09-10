@@ -1,9 +1,9 @@
 
-package speeder.jpa.nbm;
+package io.github.tyrone1987.nbm;
 
 import java.util.LinkedList;
 import java.util.List;
-import speeder.jpa.data.model.DataModel;
+import io.github.tyrone1987.data.model.DataModel;
 
 public class DataModelWraper
 {

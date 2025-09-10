@@ -1,1 +1,1 @@
-speeder.jpa.provider.script.postgresql.PostgreSQLScriptProvider
+io.github.tyrone1987.provider.script.postgresql.PostgreSQLScriptProvider

@@ -16,8 +16,8 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Expression;
 import jakarta.persistence.criteria.Path;
-import speeder.jpa.persistence.*;
-import speeder.jpa.integration.*;
+import io.github.tyrone1987.persistence.*;
+import io.github.tyrone1987.integration.*;
 
 /**
  * Esta interface permite realizar consultas sobre las entidades ${entity.name} de

@@ -1,1 +1,1 @@
-speeder.jpa.provider.script.mysql.MySQLScriptProvider
+io.github.tyrone1987.provider.script.mysql.MySQLScriptProvider

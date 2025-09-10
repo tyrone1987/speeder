@@ -10,7 +10,7 @@ import java.io.Serializable;
 import java.util.Date;
 import jakarta.persistence.*;
 import java.math.BigDecimal;
-import speeder.jpa.persistence.*;
+import io.github.tyrone1987.persistence.*;
 
 /**
  * Inteface para la entidad ${entity.name}

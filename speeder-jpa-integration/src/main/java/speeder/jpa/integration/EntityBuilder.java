@@ -3,10 +3,10 @@
  * and open the template in the editor.
  */
 
-package speeder.jpa.integration;
+package io.github.tyrone1987.integration;
 
-import speeder.jpa.persistence.AbstractEntity;
-import speeder.jpa.persistence.IEntity;
+import io.github.tyrone1987.persistence.AbstractEntity;
+import io.github.tyrone1987.persistence.IEntity;
 
 /**
  *

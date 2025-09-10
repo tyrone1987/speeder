@@ -1,9 +1,9 @@
 
-package speeder.jpa.provider.script.derby;
+package io.github.tyrone1987.provider.script.derby;
 
 import java.util.HashMap;
 import java.util.Map;
-import speeder.jpa.generator.spi.*;
+import io.github.tyrone1987.generator.spi.*;
 
 public class DerbyScriptProvider implements SrcCodeGenDataModel
 {

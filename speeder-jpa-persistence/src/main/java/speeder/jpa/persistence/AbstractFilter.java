@@ -1,4 +1,4 @@
-package speeder.jpa.persistence;
+package io.github.tyrone1987.persistence;
 
 /**
  * Clase base para los objetos filter de las entidades.

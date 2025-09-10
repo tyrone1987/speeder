@@ -11,7 +11,7 @@ import java.util.Date;
 import jakarta.persistence.*;
 import java.math.BigDecimal;
 import jakarta.validation.constraints.*;
-import speeder.jpa.persistence.*;
+import io.github.tyrone1987.persistence.*;
 
 <#if entity.converters?? >
 import org.eclipse.persistence.annotations.Convert;

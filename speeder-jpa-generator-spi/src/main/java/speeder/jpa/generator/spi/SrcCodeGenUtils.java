@@ -1,5 +1,5 @@
 
-package speeder.jpa.generator.spi;
+package io.github.tyrone1987.generator.spi;
 
 import java.util.Iterator;
 import java.util.ServiceLoader;

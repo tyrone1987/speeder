@@ -1,11 +1,11 @@
 
-package speeder.jpa.nbm.nodes;
+package io.github.tyrone1987.nbm.nodes;
 
 import org.openide.nodes.AbstractNode;
 import org.openide.nodes.Children;
-import speeder.jpa.data.model.Converter;
-import speeder.jpa.nbm.DataModelChangeListener;
-import speeder.jpa.nbm.DataModelWraper;
+import io.github.tyrone1987.data.model.Converter;
+import io.github.tyrone1987.nbm.DataModelChangeListener;
+import io.github.tyrone1987.nbm.DataModelWraper;
 
 public class ConverterNode extends AbstractNode implements DataModelChangeListener
 {

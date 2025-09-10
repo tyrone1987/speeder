@@ -1,4 +1,4 @@
-package speeder.jpa.maven.plugin;
+package io.github.tyrone1987.maven.plugin;
 
 import jakarta.xml.bind.JAXBContext;
 import jakarta.xml.bind.JAXBException;
@@ -12,8 +12,8 @@ import org.apache.maven.model.Resource;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.project.MavenProject;
-import speeder.jpa.data.model.*;
-import speeder.jpa.generator.spi.*;
+import io.github.tyrone1987.data.model.*;
+import io.github.tyrone1987.generator.spi.*;
 
 /**
  * Generar clases de persistencia

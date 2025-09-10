@@ -1,12 +1,12 @@
 
-package speeder.jpa.nbm.nodes;
+package io.github.tyrone1987.nbm.nodes;
 
 import org.openide.nodes.AbstractNode;
 import org.openide.nodes.Children;
-import speeder.jpa.data.model.EnumeratorValue;
-import speeder.jpa.data.model.Field;
-import speeder.jpa.nbm.DataModelChangeListener;
-import speeder.jpa.nbm.DataModelWraper;
+import io.github.tyrone1987.data.model.EnumeratorValue;
+import io.github.tyrone1987.data.model.Field;
+import io.github.tyrone1987.nbm.DataModelChangeListener;
+import io.github.tyrone1987.nbm.DataModelWraper;
 
 public class EnumValueNode extends AbstractNode implements DataModelChangeListener
 {

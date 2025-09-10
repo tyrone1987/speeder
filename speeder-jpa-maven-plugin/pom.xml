@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>speeder.jpa</groupId>
+        <groupId>io.github.tyrone1987</groupId>
         <artifactId>speeder-jpa-parent</artifactId>
         <version>1.0.0</version>        
     </parent>
 
-    <groupId>speeder.jpa</groupId>
+    <groupId>io.github.tyrone1987</groupId>
     <artifactId>speeder-jpa-maven-plugin</artifactId>
     <version>1.0.0</version>
     <packaging>maven-plugin</packaging>
@@ -22,7 +22,7 @@
         <!-- Define versiones de plugins aquí para mantener consistencia -->
         <maven.compiler.version>3.14.0</maven.compiler.version>
         <maven.plugin.plugin.version>3.11.0</maven.plugin.plugin.version>
-        <speeder.groupId>speeder.jpa</speeder.groupId>
+        <speeder.groupId>io.github.tyrone1987</speeder.groupId>
     </properties>
 
    

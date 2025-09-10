@@ -1,10 +1,10 @@
 
-package speeder.jpa.provider.persistence;
+package io.github.tyrone1987.provider.persistence;
 
 import java.util.HashMap;
 import java.util.Map;
-import speeder.jpa.data.model.Enumerator;
-import speeder.jpa.generator.spi.*;
+import io.github.tyrone1987.data.model.Enumerator;
+import io.github.tyrone1987.generator.spi.*;
 
 public class EnumProvider implements SrcCodeGenEnum
 {

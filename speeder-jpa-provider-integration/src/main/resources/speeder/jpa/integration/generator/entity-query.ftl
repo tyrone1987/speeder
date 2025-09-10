@@ -16,10 +16,10 @@ import jakarta.persistence.EntityManager;
 import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Expression;
 import jakarta.persistence.criteria.Path;
-import speeder.jpa.integration.EntityQuery;
-import speeder.jpa.integration.AbstractQuery;
-import speeder.jpa.integration.QueryHelper;
-import speeder.jpa.integration.QueryProvider;
+import io.github.tyrone1987.integration.EntityQuery;
+import io.github.tyrone1987.integration.AbstractQuery;
+import io.github.tyrone1987.integration.QueryHelper;
+import io.github.tyrone1987.integration.QueryProvider;
 
 /**
  * Esta clase permite realizar consultas sobre las entidades ${entity.name} de

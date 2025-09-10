@@ -1,5 +1,5 @@
 
-package speeder.jpa.persistence;
+package io.github.tyrone1987.persistence;
 
 public class RangeFilter<T>
 {

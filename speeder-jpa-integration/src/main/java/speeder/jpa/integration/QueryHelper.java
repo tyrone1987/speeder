@@ -1,5 +1,5 @@
 
-package speeder.jpa.integration;
+package io.github.tyrone1987.integration;
 
 import java.util.List;
 import jakarta.persistence.EntityManager;

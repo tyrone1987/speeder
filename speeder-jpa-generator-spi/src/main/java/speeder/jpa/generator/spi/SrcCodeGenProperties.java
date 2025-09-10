@@ -1,9 +1,9 @@
 
-package speeder.jpa.generator.spi;
+package io.github.tyrone1987.generator.spi;
 
 import java.util.Map;
 import org.apache.maven.project.MavenProject;
-import speeder.jpa.data.model.DataModel;
+import io.github.tyrone1987.data.model.DataModel;
 
 public class SrcCodeGenProperties
 {

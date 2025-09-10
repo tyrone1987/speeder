@@ -13,8 +13,8 @@ import jakarta.persistence.EntityManager;
 import org.apache.commons.lang.StringUtils;
 import java.math.BigDecimal;
 import java.util.Date;
-import speeder.jpa.persistence.*;
-import speeder.jpa.integration.*;
+import io.github.tyrone1987.persistence.*;
+import io.github.tyrone1987.integration.*;
 
 /**
  * Esta clase permite manipular un objeto ${entity.name} de manera facil mediante

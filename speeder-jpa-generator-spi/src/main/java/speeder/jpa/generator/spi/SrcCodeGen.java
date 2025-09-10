@@ -1,5 +1,5 @@
 
-package speeder.jpa.generator.spi;
+package io.github.tyrone1987.generator.spi;
 
 public interface SrcCodeGen
 {

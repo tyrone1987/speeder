@@ -4,12 +4,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>speeder.jpa</groupId>
+        <groupId>io.github.tyrone1987</groupId>
         <artifactId>speeder-jpa-parent</artifactId>
         <version>1.0.0</version>        
     </parent>
 
-    <groupId>speeder.jpa</groupId>
+    <groupId>io.github.tyrone1987</groupId>
     <artifactId>speeder-jpa-provider-tpl-freemarker</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>

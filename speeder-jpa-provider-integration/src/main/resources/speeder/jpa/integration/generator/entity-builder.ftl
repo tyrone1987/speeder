@@ -11,10 +11,10 @@ import ${i.packageName}.integration.*;
 
 import jakarta.persistence.EntityManager;
 import org.apache.commons.lang.StringUtils;
-import speeder.jpa.integration.EntityBuilder;
-import speeder.jpa.integration.AbstractBuilder;
-import speeder.jpa.integration.EntityBuilderValidated;
-import speeder.jpa.integration.IntegrationException;
+import io.github.tyrone1987.integration.EntityBuilder;
+import io.github.tyrone1987.integration.AbstractBuilder;
+import io.github.tyrone1987.integration.EntityBuilderValidated;
+import io.github.tyrone1987.integration.IntegrationException;
 import java.math.BigDecimal;
 import java.util.Date;
 

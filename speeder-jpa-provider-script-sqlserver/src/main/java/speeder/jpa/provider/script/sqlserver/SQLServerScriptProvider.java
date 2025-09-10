@@ -1,13 +1,13 @@
 
-package speeder.jpa.provider.script.sqlserver;
+package io.github.tyrone1987.provider.script.sqlserver;
 
 import java.util.HashMap;
 import java.util.Map;
-import speeder.jpa.generator.spi.SrcCodeGenDataModel;
-import speeder.jpa.generator.spi.SrcCodeGenTmplEng;
-import speeder.jpa.generator.spi.SrcCodeGenProperties;
-import speeder.jpa.generator.spi.SrcCodeGenUtils;
-import speeder.jpa.generator.spi.TmplEng;
+import io.github.tyrone1987.generator.spi.SrcCodeGenDataModel;
+import io.github.tyrone1987.generator.spi.SrcCodeGenTmplEng;
+import io.github.tyrone1987.generator.spi.SrcCodeGenProperties;
+import io.github.tyrone1987.generator.spi.SrcCodeGenUtils;
+import io.github.tyrone1987.generator.spi.TmplEng;
 
 public class SQLServerScriptProvider implements SrcCodeGenDataModel
 {

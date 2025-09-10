@@ -1,4 +1,4 @@
-package speeder.jpa.data.model;
+package io.github.tyrone1987.data.model;
 
 import jakarta.xml.bind.annotation.*;
 

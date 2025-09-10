@@ -9,7 +9,7 @@ import ${i.packageName}.persiscence.*;
 import java.io.Serializable;
 import java.util.Date;
 import java.math.BigDecimal;
-import speeder.jpa.persistence.*;
+import io.github.tyrone1987.persistence.*;
 
 /**
  * Clase utilitaria para creacion de filtros personalizados por el usuario

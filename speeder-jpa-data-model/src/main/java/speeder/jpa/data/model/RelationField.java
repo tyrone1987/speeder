@@ -1,5 +1,5 @@
 
-package speeder.jpa.data.model;
+package io.github.tyrone1987.data.model;
 
 import jakarta.xml.bind.annotation.XmlAttribute;
 import org.apache.commons.lang.WordUtils;

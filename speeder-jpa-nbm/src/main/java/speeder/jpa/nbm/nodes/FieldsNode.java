@@ -1,15 +1,15 @@
 
-package speeder.jpa.nbm.nodes;
+package io.github.tyrone1987.nbm.nodes;
 
 import java.util.List;
 import org.openide.nodes.AbstractNode;
 import org.openide.nodes.ChildFactory;
 import org.openide.nodes.Children;
 import org.openide.nodes.Node;
-import speeder.jpa.data.model.EntitySpec;
-import speeder.jpa.data.model.Field;
-import speeder.jpa.nbm.DataModelChangeListener;
-import speeder.jpa.nbm.DataModelWraper;
+import io.github.tyrone1987.data.model.EntitySpec;
+import io.github.tyrone1987.data.model.Field;
+import io.github.tyrone1987.nbm.DataModelChangeListener;
+import io.github.tyrone1987.nbm.DataModelWraper;
 
 public class FieldsNode extends AbstractNode implements DataModelChangeListener
 {

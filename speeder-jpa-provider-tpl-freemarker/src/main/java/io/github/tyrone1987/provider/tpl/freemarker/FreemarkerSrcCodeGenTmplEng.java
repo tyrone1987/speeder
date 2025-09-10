@@ -1,5 +1,5 @@
 
-package speeder.jpa.provider.tpl.freemarker;
+package io.github.tyrone1987.provider.tpl.freemarker;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;
@@ -7,8 +7,8 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import speeder.jpa.generator.spi.SrcCodeGenTmplEng;
-import speeder.jpa.generator.spi.TmplEng;
+import io.github.tyrone1987.generator.spi.SrcCodeGenTmplEng;
+import io.github.tyrone1987.generator.spi.TmplEng;
 
 public class FreemarkerSrcCodeGenTmplEng implements SrcCodeGenTmplEng
 {

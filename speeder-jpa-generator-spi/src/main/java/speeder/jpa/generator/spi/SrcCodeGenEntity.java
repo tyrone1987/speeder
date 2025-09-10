@@ -1,7 +1,7 @@
 
-package speeder.jpa.generator.spi;
+package io.github.tyrone1987.generator.spi;
 
-import speeder.jpa.data.model.Entity;
+import io.github.tyrone1987.data.model.Entity;
 
 public interface SrcCodeGenEntity extends SrcCodeGen
 {

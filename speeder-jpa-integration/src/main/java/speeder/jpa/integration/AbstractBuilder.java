@@ -1,7 +1,7 @@
-package speeder.jpa.integration;
+package io.github.tyrone1987.integration;
 
 import jakarta.persistence.EntityManager;
-import speeder.jpa.persistence.IEntity;
+import io.github.tyrone1987.persistence.IEntity;
 
 /**
  * Esta clase permite manipular un objeto T de manera facil mediante una

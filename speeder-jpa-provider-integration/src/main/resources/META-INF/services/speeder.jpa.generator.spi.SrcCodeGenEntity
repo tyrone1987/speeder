@@ -1,2 +1,2 @@
-speeder.jpa.provider.integration.EntityBuilderProvider
-speeder.jpa.provider.integration.EntityQueryProvider
+io.github.tyrone1987.provider.integration.EntityBuilderProvider
+io.github.tyrone1987.provider.integration.EntityQueryProvider

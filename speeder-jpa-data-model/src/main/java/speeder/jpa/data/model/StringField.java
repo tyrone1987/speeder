@@ -1,5 +1,5 @@
 
-package speeder.jpa.data.model;
+package io.github.tyrone1987.data.model;
 
 public class StringField extends AbsStrField
 {

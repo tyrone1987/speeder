@@ -33,3 +33,5 @@ replay_pid*
 /speeder-jpa-provider-integration/target
 /speeder-jpa-provider-script-derby/target
 /speeder-jpa-provider-script-mysql/target
+/speeder-jpa-provider-script-postgresql/target
+/speeder-jpa-provider-tpl-freemarker/target

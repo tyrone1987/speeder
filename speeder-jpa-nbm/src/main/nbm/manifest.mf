@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+OpenIDE-Module-Layer: speeder/jpa/nbm/layer.xml
+OpenIDE-Module-Localizing-Bundle: speeder/jpa/nbm/Bundle.properties

@@ -1,0 +1,72 @@
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>speeder.jpa</groupId>
+    <artifactId>speeder-jpa-parent</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <name>speeder-jpa-parent</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.release>17</maven.compiler.release>
+    </properties>
+
+    <scm>
+        
+    </scm>
+
+    <description>
+        Maven plugin for Speeder JPA code generation. 
+        Automatically generates JPA entities, repositories, and database scripts from your data model.
+    </description>
+    
+    
+    <!-- LICENCIA (OBLIGATORIA) -->
+    <licenses>
+        <license>
+            <name>GNU General Public License v2.0</name>
+            <url>https://www.gnu.org/licenses/old-licenses/gpl-2.0.html</url>
+            <distribution>repo</distribution>
+            <comments>Based on original work from Gilberto Vento</comments>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Gilberto Vento</name>
+            <roles>
+                <role>Original author</role>
+            </roles>
+        </developer>
+        <developer>
+            <name>Tyrone Lopez</name>
+            <email>tyronelv1@gmail.com</email>
+            <organization>Personal</organization>
+            <organizationUrl>https://github.com/tyrone1987</organizationUrl>
+            <roles>
+                <role>Migrator to Java 17</role>
+                <role>Maintainer</role>
+            </roles>
+        </developer>
+    </developers>
+    
+    <modules>
+        <module>speeder-jpa-data-model</module>
+        <module>speeder-jpa-integration</module>        
+        <module>speeder-jpa-maven-plugin</module>
+        <module>speeder-jpa-persistence</module>
+        <module>speeder-jpa-generator-spi</module>        
+        <module>speeder-jpa-provider-persistence</module>
+        <module>speeder-jpa-provider-integration</module>
+        <module>speeder-jpa-provider-script-mysql</module>
+        <module>speeder-jpa-provider-script-postgresql</module>
+        <module>speeder-jpa-provider-script-derby</module>
+        <module>speeder-jpa-provider-script-sqlserver</module>
+        <module>speeder-jpa-provider-tpl-freemarker</module>
+    </modules>
+</project>

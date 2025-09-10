@@ -22,3 +22,14 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+/speeder-jpa-maven-plugin/target
+/speeder-jpa-nbm/target
+/speeder-jpa-data-model/target
+/speeder-jpa-integration/target
+/speeder-jpa-persistence/target
+/speeder-jpa-generator-spi/target
+/speeder-jpa-provider-persistence/target
+/speeder-jpa-provider-script-sqlserver/target
+/speeder-jpa-provider-integration/target
+/speeder-jpa-provider-script-derby/target
+/speeder-jpa-provider-script-mysql/target

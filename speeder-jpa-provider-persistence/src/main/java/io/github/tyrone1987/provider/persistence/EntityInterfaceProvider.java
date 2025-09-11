@@ -23,7 +23,7 @@ public class EntityInterfaceProvider implements SrcCodeGenInterface
         m.put("forObjectDb", false);
 
         tp.generateSourceFile(
-                "/speeder/jpa/persistence/generator/entity-interface.ftl", 
+                "/io/github/tyrone1987/persistence/generator/entity-interface.ftl", 
                 m, 
                 file);
     }

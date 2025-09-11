@@ -5,12 +5,12 @@
     <parent>
         <groupId>io.github.tyrone1987</groupId>
         <artifactId>speeder-jpa-parent</artifactId>
-        <version>1.0.0</version>        
+        <version>1.0.1</version>        
     </parent>
 
     <groupId>io.github.tyrone1987</groupId>
     <artifactId>speeder-jpa-maven-plugin</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>maven-plugin</packaging>
 
     <name>speeder-jpa-maven-plugin</name>

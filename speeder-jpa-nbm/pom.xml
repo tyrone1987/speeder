@@ -4,7 +4,7 @@
 
     <groupId>io.github.tyrone1987</groupId>
     <artifactId>speeder-jpa-nbm</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>nbm</packaging>
 
     <name>speeder-jpa-nbm</name>
@@ -88,7 +88,7 @@
             <version>RELEASE260</version>
         </dependency>
         <dependency>
-            <groupId>${project.groupId}</groupId>
+            <groupId>io.github.tyrone1987</groupId>
             <artifactId>speeder-jpa-data-model</artifactId>
             <version>${project.version}</version>
         </dependency>

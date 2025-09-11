@@ -5,12 +5,12 @@
     <parent>
         <groupId>io.github.tyrone1987</groupId>
         <artifactId>speeder-jpa-parent</artifactId>
-        <version>1.0.0</version>        
+        <version>1.0.1</version>        
     </parent>
 
     <groupId>io.github.tyrone1987</groupId>
     <artifactId>speeder-jpa-integration</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
 
     <name>speeder-jpa-integration</name>
@@ -47,7 +47,7 @@
             <version>2.6</version>
         </dependency>
         <dependency>
-            <groupId>${project.groupId}</groupId>
+            <groupId>io.github.tyrone1987</groupId>
             <artifactId>speeder-jpa-persistence</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -62,6 +62,53 @@
                 <configuration>
                     <release>17</release>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        
+            <!-- Plugin para generar JAVADOC -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        
+            <!-- Javadoc -->
+            <!-- Plugin para GPG (FIRMA) -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                        <configuration>
+                            <keyname>8A2472480634ADF9</keyname> <!-- Añade tu KEY ID -->
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>

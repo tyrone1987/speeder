@@ -21,7 +21,7 @@ public class EnumProvider implements SrcCodeGenEnum
         m.put("enum", enumerator);
 
         tp.generateSourceFile(
-                "/speeder/jpa/persistence/generator/enum.ftl",
+                "/io/github/tyrone1987/persistence/generator/enum.ftl",
                 m,
                 file);
     }

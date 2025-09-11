@@ -4,7 +4,7 @@
 
     <groupId>io.github.tyrone1987</groupId>
     <artifactId>speeder-jpa-parent</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>pom</packaging>
 
     <name>speeder-jpa-parent</name>
@@ -55,7 +55,7 @@
         </developer>
     </developers>
 
-     <distributionManagement>
+    <distributionManagement>
         <repository>
             <id>central</id>
             <url>https://central.sonatype.com/api/v1/publisher/release</url>
@@ -66,10 +66,25 @@
         </snapshotRepository>
     </distributionManagement>
 
-
     <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-gpg-plugin</artifactId>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <!-- PLUGIN CENTRAL PUBLISHING (OBLIGATORIO) -->
         <plugins>
-            <!-- PLUGIN CENTRAL PUBLISHING (OBLIGATORIO) -->
             <plugin>
                 <groupId>org.sonatype.central</groupId>
                 <artifactId>central-publishing-maven-plugin</artifactId>
@@ -83,21 +98,7 @@
             </plugin>
 
             <!-- PLUGIN PARA GPG (FIRMA) -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-gpg-plugin</artifactId>
-                <version>3.0.1</version>
-                <executions>
-                    <execution>
-                        <id>sign-artifacts</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>sign</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-
+            
             <!-- PLUGIN PARA SOURCES -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -129,6 +130,25 @@
                     </execution>
                 </executions>
             </plugin>
+            
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>3.0.1</version>
+                <executions>
+                    <execution>
+                        <id>sign-artifacts</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sign</goal>
+                        </goals>
+                        <configuration>
+                            <keyname>8A2472480634ADF9</keyname>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
         </plugins>
     </build>
 

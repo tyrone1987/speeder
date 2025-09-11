@@ -32,15 +32,16 @@ public class FreemarkerSrcCodeGenTmplEng implements SrcCodeGenTmplEng
             f.createNewFile();
         }
 
-        InputStream is = getClass().getResourceAsStream(template);
-        InputStreamReader isr = new InputStreamReader(is);
-        Template tmp = new Template(template, isr, cf);
-        isr.close();
-        is.close();
+        Template tmp;
+        try (InputStream is = getClass().getResourceAsStream(template)) {
+            InputStreamReader isr = new InputStreamReader(is);
+            tmp = new Template(template, isr, cf);
+            isr.close();
+        }
 
-        FileWriter fw = new FileWriter(f);
-        tmp.process(data, fw);
-        fw.close();
+        try (FileWriter fw = new FileWriter(f)) {
+            tmp.process(data, fw);
+        }
     }
 
     public TmplEng getEngine()

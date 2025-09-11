@@ -23,7 +23,7 @@ public class EntityProvider implements SrcCodeGenEntity
         m.put("forObjectDb", forObjectDb);
 
         tp.generateSourceFile(
-                "/speeder/jpa/persistence/generator/entity.ftl",
+                "/io/github/tyrone1987/persistence/generator/entity.ftl",
                 m,
                 file);
     }

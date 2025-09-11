@@ -65,10 +65,23 @@ public class GenerateMojo extends AbstractMojo {
     @Override
     public void execute() throws MojoExecutionException {
         try {
+
             DataModel dm = this.parserXmlDataModel();
 
             String genSrcRoot = project.getBuild().getDirectory() + "/generated-sources/speeder/";
             String genResRoot = project.getBuild().getDirectory() + "/generated-resources/speeder/";
+
+            // CREAR DIRECTORIOS SI NO EXISTEN
+            File genSrcDir = new File(genSrcRoot);
+            File genResDir = new File(genResRoot);
+            if (!genSrcDir.exists()) {
+                genSrcDir.mkdirs();
+                System.out.println("Created source directory: " + genSrcDir.getAbsolutePath());
+            }
+            if (!genResDir.exists()) {
+                genResDir.mkdirs();
+                System.out.println("Created resource directory: " + genResDir.getAbsolutePath());
+            }
 
             project.addCompileSourceRoot(genSrcRoot);
             Resource r = new Resource();
@@ -119,23 +132,37 @@ public class GenerateMojo extends AbstractMojo {
         if (prop.getDataModel().getEntitys() != null) {
             for (SrcCodeGenEntity plugin : ServiceLoader.load(SrcCodeGenEntity.class)) {
                 prop.getDataModel().getEntitys().stream().forEachOrdered(entity -> {
+                    System.out.println("Processing entity: " + entity.getName() + " with generator: " + plugin.getGeneratorName());
                     try {
                         if (codeGenerators == null || codeGenerators.isEmpty() || codeGenerators.contains(plugin.getGeneratorName())) {
+                            System.out.println("Executing generator: " + plugin.getGeneratorName() + " for entity: " + entity.getName());
                             plugin.execute(prop, entity);
+                            // Verifica si se crearon archivos
+                            File generatedDir = new File(prop.getGeneratedSourcesDir());
+                            if (generatedDir.exists()) {
+                                System.out.println("Generated files in: " + generatedDir.getAbsolutePath());
+                                Arrays.stream(generatedDir.listFiles()).forEach(f
+                                        -> System.out.println(" - " + f.getName()));
+                            } else {
+                                System.out.println("Skipping generator: " + plugin.getGeneratorName() + " - generatedDir no exist");
+                            }
                         } else {
-                            getLog().error("no code");
+                            System.out.println("Skipping generator: " + plugin.getGeneratorName() + " - not in codeGenerators list");
                         }
                     } catch (Exception ex) {
                         Logger.getLogger(GenerateMojo.class.getName()).log(Level.SEVERE, null, ex);
+                        System.out.println("Error in generator " + plugin.getGeneratorName() + ": " + ex.getMessage());
                     }
                 });
             }
+        } else {
+            System.out.println("No entities found in data model");
         }
     }
 
     private void executeSpiEnumSourceCodeGenerator(SrcCodeGenProperties prop) {
         if (prop.getDataModel().getEnums() != null) {
-            for (var plugin : ServiceLoader.load(SrcCodeGenEnum.class)) {
+            for (SrcCodeGenEnum plugin : ServiceLoader.load(SrcCodeGenEnum.class)) {
                 prop.getDataModel().getEnums().forEach(enumerator -> {
                     try {
                         if (codeGenerators == null || codeGenerators.isEmpty() || codeGenerators.contains(plugin.getGeneratorName())) {

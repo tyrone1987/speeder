@@ -21,7 +21,7 @@ public class EntityMetaModelProvider implements SrcCodeGenEntity
         m.put("entity", entity);
 
         tp.generateSourceFile(
-                "/speeder/jpa/persistence/generator/entity-meta-model.ftl", 
+                "/io/github/tyrone1987/persistence/generator/entity-meta-model.ftl", 
                 m, 
                 file);
     }

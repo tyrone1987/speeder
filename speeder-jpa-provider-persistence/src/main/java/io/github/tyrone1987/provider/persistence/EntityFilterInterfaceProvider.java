@@ -25,7 +25,7 @@ public class EntityFilterInterfaceProvider implements SrcCodeGenInterface
         m.put("entity", entityInterface);
 
         tp.generateSourceFile(
-                "/speeder/jpa/persistence/generator/entity-filter-interface.ftl", 
+                "/io/github/tyrone1987/persistence/generator/entity-filter-interface.ftl", 
                 m, file);
     }
 
